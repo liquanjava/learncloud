@@ -18,9 +18,5 @@ public class Dept implements Serializable {
     private String dbSource;
 
 
-    public static void main(String[] args) {
-        Dept dept = new Dept();
-        dept.setDeptId(11l).setDeptName("研发部").setDbSource("一库");
-        System.out.println(dept);
-    }
+
 }

@@ -73,6 +73,7 @@
     <modules>
         <module>learncloud-api</module>
         <module>learncloud-provider-dept-8001</module>
+        <module>learncloud-customer-dept-80</module>
     </modules>
 
 

@@ -11,7 +11,7 @@
 		select dept_id deptId,dept_name deptName,db_source dbSource from dept;
 	</select>
 	<insert id="addDept" parameterType="com.liquan.entity.Dept">
-		INSERT INTO dept(dept_name,db_source) VALUES(#{dname},DATABASE());
+		INSERT INTO dept(dept_name,db_source) VALUES(#{deptName},DATABASE());
 	</insert>
 
 </mapper>
