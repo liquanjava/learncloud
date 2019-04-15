@@ -68,12 +68,34 @@
         </dependencies>
     </dependencyManagement>
 
-
+    <build>
+        <finalName>learncloud</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <delimiters>
+                        <delimiter>$</delimiter>
+                    </delimiters>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <modules>
         <module>learncloud-api</module>
         <module>learncloud-provider-dept-8001</module>
         <module>learncloud-customer-dept-80</module>
+        <module>learncloud-eureka-7001</module>
+        <module>learncloud-eureka-7002</module>
+        <module>learncloud-eureka-7003</module>
     </modules>
 
 

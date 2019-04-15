@@ -32,4 +32,9 @@ public class Dept_CustomerController {
     public Boolean add(Dept dept) {
         return restTemplate.postForObject(REST_URL_PREFIX + "/dept/add", dept, Boolean.class);
     }
+
+    @RequestMapping("/consumer/dept/discovery")
+    public Object discovery() {
+        return restTemplate.getForObject(REST_URL_PREFIX + "/dept/discovery",Object.class);
+    }
 }
