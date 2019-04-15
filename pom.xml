@@ -96,6 +96,8 @@
         <module>learncloud-eureka-7001</module>
         <module>learncloud-eureka-7002</module>
         <module>learncloud-eureka-7003</module>
+        <module>learncloud-provider-dept-8002</module>
+        <module>learncloud-provider-dept-8003</module>
     </modules>
 
 

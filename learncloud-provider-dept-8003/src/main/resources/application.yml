@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 8003
   
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
@@ -13,7 +13,7 @@ spring:
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
-    url: jdbc:mysql://localhost:3306/mysqldb1              # 数据库名称
+    url: jdbc:mysql://localhost:3306/mysqldb3              # 数据库名称
     username: root
     password: root
     dbcp2:
@@ -27,7 +27,7 @@ eureka:
     service-url: 
       defaultZone: http://eureka7001.com:7001/eureka,http://eureka7001.com:7002/eureka,http://eureka7003.com:7003/eureka
   instance:
-    instance-id: learnspring-dept:8001
+    instance-id: learnspring-dept:8003
     prefer-ip-address: true
 info:
   app.name: liquan-learncloud

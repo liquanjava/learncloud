@@ -13,7 +13,7 @@ import java.util.List;
 public class Dept_CustomerController {
 
 
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    private static final String REST_URL_PREFIX = "http://LEARNCLOUD-DEPT";
 
     @Autowired
     private RestTemplate restTemplate;
