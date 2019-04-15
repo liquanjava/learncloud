@@ -1,5 +1,8 @@
 package com.liquan.springcloud.cfgbeans;
 
+import com.netflix.loadbalancer.IRule;
+import com.netflix.loadbalancer.RandomRule;
+import com.netflix.loadbalancer.RetryRule;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,5 +15,11 @@ public class ConfigBean {
     @LoadBalanced
     public RestTemplate getRestTemplate() {
         return new RestTemplate();
+    }
+
+    @Bean
+    public IRule getrule(){
+
+        return new RetryRule();
     }
 }
