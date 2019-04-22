@@ -98,6 +98,9 @@
         <module>learncloud-eureka-7003</module>
         <module>learncloud-provider-dept-8002</module>
         <module>learncloud-provider-dept-8003</module>
+        <module>learncloud-customer-dept-feign</module>
+        <module>DeptConsumerFeign_app</module>
+        <module>learncloud-provider-dept-hystrix</module>
     </modules>
 
 
