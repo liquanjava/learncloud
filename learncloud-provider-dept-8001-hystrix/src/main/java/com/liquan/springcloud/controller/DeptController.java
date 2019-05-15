@@ -36,6 +36,11 @@ public class DeptController {
         return dept;
     }
 
+    public Dept afterError(@PathVariable("id") Long id) {
+        System.out.println("熔断器");
+        return new Dept().setDeptName("32");
+    }
+
     @RequestMapping(value = "/dept/list",method = RequestMethod.GET)
     public List<Dept> list() {
         return service.list();
@@ -51,10 +56,5 @@ public class DeptController {
         });
 
         return this.client;
-    }
-
-    public Dept afterError(@PathVariable("id") Long id) {
-        System.out.println("熔断器");
-        return new Dept().setDeptName("32");
     }
 }
